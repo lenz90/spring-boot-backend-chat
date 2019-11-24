@@ -8,5 +8,5 @@ import com.bolsadeideas.springboot.backend.chat.models.documents.Mensaje;
 
 public interface ChatRepository extends MongoRepository<Mensaje, String>{
 	
-    public List<Mensaje> findFirst10ByOrderByFechaDesc();
+    List<Mensaje> findFirst10ByOrderByFechaDesc();
 }
